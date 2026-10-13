@@ -615,16 +615,29 @@
       html { scroll-behavior: auto; }
       * { transition: none !important; }
     }
+    .logo {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    height: 38px;
+    max-width: 170px;
+  }
+}
   </style>
 </head>
 
 <body>
   <header class="nav-wrap">
     <nav class="container nav" aria-label="Menu principal">
-      <a class="brand" href="#inicio">
-        <span class="brandmark" aria-hidden="true"></span>
-        CONECTA<span style="color:var(--red)">.</span>
-      </a>
+    <a class="brand" href="#inicio">
+  <img src="logo.png" alt="CONECTA — início" class="logo">
+</a>
 
       <button class="menu-toggle" aria-label="Abrir menu"
         aria-expanded="false" aria-controls="navlinks">☰</button>
