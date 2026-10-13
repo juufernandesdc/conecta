@@ -1,29 +1,911 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#091a34"><meta name="description" content="CONECTA — uma equipe multidisciplinar que transforma diferentes experiências em soluções de impacto.">
-<title>CONECTA | Diversidade que gera resultados</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0b1e3a;--navy2:#122b50;--blue:#204976;--red:#ed514e;--paper:#f7f8fa;--white:#fff;--muted:#68758a;--line:#e5eaf0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--navy);font-family:'DM Sans',sans-serif;line-height:1.6}h1,h2,h3,p{margin-top:0}h1,h2,h3,.brand,.nav{font-family:Manrope,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit} .container{max-width:1180px;margin:auto;padding:0 28px} .nav-wrap{position:sticky;top:0;z-index:20;background:rgba(9,26,52,.96);backdrop-filter:blur(18px);border-bottom:1px solid #ffffff18}.nav{height:80px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-weight:800;font-size:22px;letter-spacing:.075em;color:white;display:flex;align-items:center;gap:12px}.brandmark{width:33px;height:33px;position:relative;display:inline-grid;place-items:center}.brandmark:before,.brandmark:after{content:'';position:absolute;border:4px solid var(--red);height:19px;width:19px;transform:rotate(45deg);border-radius:5px}.brandmark:before{left:0}.brandmark:after{left:12px;border-color:white}.links{display:flex;gap:27px;align-items:center}.links a{color:#cbd4e1;font-size:13px;font-weight:700;transition:.2s}.links a:hover{color:white}.nav-cta{border:1px solid #7890ae!important;border-radius:30px;padding:11px 17px}.menu-toggle{display:none;background:none;color:white;border:1px solid #4c617b;border-radius:8px;padding:7px 12px;font-size:21px}.hero{background:radial-gradient(ellipse at 83% 46%,#214474 0%,transparent 48%),linear-gradient(140deg,#07172e,#0d2444 66%,#152c4d);color:white;overflow:hidden}.hero-content{min-height:630px;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:40px;padding-top:68px;padding-bottom:88px}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--red);font-size:11px;font-weight:800}.eyebrow:before{content:'';display:inline-block;width:22px;height:2px;background:currentColor}.hero .eyebrow{color:#ff8582}.hero h1{font-size:clamp(52px,6.6vw,92px);line-height:1.03;letter-spacing:-.075em;margin:22px 0 24px;font-weight:800}.hero h1 span{color:#ff6b67}.hero p{color:#c1cfdd;font-size:18px;max-width:530px;line-height:1.8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{border:1px solid transparent;border-radius:6px;padding:15px 23px;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:12px;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-3px)}.btn-red{background:var(--red);color:white}.btn-outline{border-color:#526a8b;color:white}.orbit{position:relative;aspect-ratio:1/1;max-width:500px;width:100%;margin:auto}.orbit svg{width:100%;height:100%;filter:drop-shadow(0 18px 34px #0003)}.orbit-caption{position:absolute;bottom:6%;left:50%;transform:translateX(-50%);white-space:nowrap;font-weight:700;color:#bdcce0;letter-spacing:.17em;font-size:10px}.section{padding:100px 0}.section-heading{max-width:690px;margin-bottom:45px}.section-heading h2{font-size:clamp(30px,4vw,47px);line-height:1.22;letter-spacing:-.055em;margin:13px 0 17px}.section-heading p{color:var(--muted);font-size:16px}.intro{background:white}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}.big-stat{background:var(--navy);min-height:320px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;position:relative;overflow:hidden}.big-stat:after{content:'';width:220px;height:220px;border:1px solid #ffffff18;border-radius:50%;position:absolute;right:-60px;top:-80px}.big-stat strong{font-size:140px;line-height:1;font-family:Manrope;letter-spacing:-.09em}.big-stat span{font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b8cbe0}.intro-text h2{font-size:clamp(29px,3.5vw,43px);letter-spacing:-.05em;line-height:1.23;margin:18px 0}.intro-text p{color:var(--muted)}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}.value{border-left:3px solid var(--red);padding-left:12px}.value strong{display:block;font-family:Manrope;font-size:13px}.value small{font-size:12px;color:var(--muted)}.team-head{display:flex;justify-content:space-between;gap:24px;align-items:end}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.member{background:white;border:1px solid var(--line);border-radius:12px;padding:28px;position:relative;overflow:hidden;transition:.25s}.member:hover{transform:translateY(-5px);box-shadow:0 20px 45px #091a3412}.member:before{content:'';height:4px;position:absolute;inset:0 0 auto;background:linear-gradient(90deg,var(--red) 0 32%,var(--navy) 32% 100%)}.avatar{height:63px;width:63px;border-radius:16px;background:#eef2f8;color:var(--blue);font-size:22px;font-family:Manrope;font-weight:800;display:grid;place-items:center;margin-bottom:22px}.member .index{float:right;color:#a3adbb;font-size:12px;font-weight:800;letter-spacing:.12em}.member h3{font-size:21px;letter-spacing:-.03em;margin:0 0 4px}.role{font-size:12px;font-weight:800;letter-spacing:.04em;color:#e35d56;text-transform:uppercase;min-height:38px}.member p{font-size:14px;color:#68758a;margin:14px 0 20px;min-height:89px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{border-radius:4px;background:#f0f3f7;color:#34465e;font-size:11px;padding:6px 9px;font-weight:700}.skills{background:#0b1e3a;color:white}.skills .section-heading p{color:#a7bbd2}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.skill{border:1px solid #365174;background:#122a49;border-radius:10px;padding:27px 20px;min-height:250px}.skill .number{font-size:12px;color:#f57370;letter-spacing:.2em;font-weight:800}.skill .glyph{font-size:29px;margin:26px 0 13px;line-height:1}.skill h3{font-size:17px;margin-bottom:10px;letter-spacing:-.03em}.skill p{font-size:13px;color:#b0c0d3;margin:0}.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:23px}.impact-card{padding:36px;background:white;border:1px solid var(--line);border-radius:12px}.impact-card.dark{background:#eef2f7}.impact-card .mini{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:800}.impact-card h3{font-size:25px;letter-spacing:-.05em;margin:13px 0}.impact-card p{color:var(--muted);font-size:15px}.impact-card ul{margin:17px 0 0;padding:0;list-style:none}.impact-card li{padding:9px 0;border-top:1px solid #dae1ea;font-size:14px}.impact-card li:before{content:'↗';color:var(--red);font-weight:800;margin-right:12px}.cta{background:var(--red);color:white;padding:78px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:26px}.cta h2{font-size:clamp(27px,3.4vw,44px);letter-spacing:-.055em;line-height:1.2;margin-bottom:10px}.cta p{margin:0;color:#fff9;max-width:650px}.cta .btn{background:white;color:var(--navy);white-space:nowrap}.footer{background:#07172d;color:#95aac4;padding:31px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;font-size:12px}.footer strong{color:white;letter-spacing:.08em}@media(max-width:900px){.hero-content{grid-template-columns:1fr;min-height:0;padding-top:85px}.hero-copy{max-width:700px}.orbit{max-width:390px}.intro-grid{gap:35px}.team-grid{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(2,1fr)}.links{gap:14px}}@media(max-width:650px){.container{padding:0 20px}.nav{height:68px}.menu-toggle{display:block}.links{display:none;position:absolute;left:0;right:0;top:68px;background:#0a1b35;padding:22px;flex-direction:column;align-items:stretch;gap:20px;border-top:1px solid #ffffff22}.links.open{display:flex}.hero h1{font-size:58px}.hero-content{padding-top:55px;padding-bottom:65px;gap:10px}.hero p{font-size:16px}.orbit{max-width:320px}.section{padding:72px 0}.intro-grid,.impact-grid{grid-template-columns:1fr}.big-stat{min-height:225px}.big-stat strong{font-size:100px}.values{gap:10px}.team-grid,.skill-grid{grid-template-columns:1fr}.member p{min-height:0}.skill{min-height:0}.team-head{display:block}.cta-inner,.footer-inner{flex-direction:column;align-items:start}.cta{padding:65px 0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091a34">
+  <meta name="description" content="CONECTA — uma equipe multidisciplinar que transforma diferentes experiências em soluções de impacto.">
+  <title>CONECTA | Diversidade que gera resultados</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0b1e3a;
+      --navy2: #122b50;
+      --blue: #204976;
+      --red: #ed514e;
+      --paper: #f7f8fa;
+      --white: #fff;
+      --muted: #68758a;
+      --line: #e5eaf0;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--navy);
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3, .brand, .nav { font-family: Manrope, sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    .container {
+      max-width: 1180px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 26, 52, .96);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid #ffffff18;
+    }
+
+    .nav {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: .075em;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brandmark {
+      width: 33px;
+      height: 33px;
+      position: relative;
+      display: inline-grid;
+      place-items: center;
+    }
+
+    .brandmark:before,
+    .brandmark:after {
+      content: '';
+      position: absolute;
+      border: 4px solid var(--red);
+      height: 19px;
+      width: 19px;
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+
+    .brandmark:before { left: 0; }
+    .brandmark:after { left: 12px; border-color: white; }
+
+    .links {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+    }
+
+    .links a {
+      color: #cbd4e1;
+      font-size: 13px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .links a:hover { color: white; }
+
+    .nav-cta {
+      border: 1px solid #7890ae !important;
+      border-radius: 30px;
+      padding: 11px 17px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      color: white;
+      border: 1px solid #4c617b;
+      border-radius: 8px;
+      padding: 7px 12px;
+      font-size: 21px;
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 83% 46%, #214474 0%, transparent 48%),
+        linear-gradient(140deg, #07172e, #0d2444 66%, #152c4d);
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      min-height: 630px;
+      display: grid;
+      grid-template-columns: 1.06fr .94fr;
+      align-items: center;
+      gap: 40px;
+      padding-top: 68px;
+      padding-bottom: 88px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .eyebrow:before {
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    .hero .eyebrow { color: #ff8582; }
+
+    .hero h1 {
+      font-size: clamp(52px, 6.6vw, 92px);
+      line-height: 1.03;
+      letter-spacing: -.075em;
+      margin: 22px 0 24px;
+      font-weight: 800;
+    }
+
+    .hero h1 span { color: #ff6b67; }
+
+    .hero p {
+      color: #c1cfdd;
+      font-size: 18px;
+      max-width: 530px;
+      line-height: 1.8;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .btn {
+      border: 1px solid transparent;
+      border-radius: 6px;
+      padding: 15px 23px;
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: .25s;
+    }
+
+    .btn:hover { transform: translateY(-3px); }
+    .btn-red { background: var(--red); color: white; }
+    .btn-outline { border-color: #526a8b; color: white; }
+
+    .orbit {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      max-width: 500px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .orbit svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 18px 34px #0003);
+    }
+
+    .orbit-caption {
+      position: absolute;
+      bottom: 6%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-weight: 700;
+      color: #bdcce0;
+      letter-spacing: .17em;
+      font-size: 10px;
+    }
+
+    .section { padding: 100px 0; }
+
+    .section-heading {
+      max-width: 690px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 47px);
+      line-height: 1.22;
+      letter-spacing: -.055em;
+      margin: 13px 0 17px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .intro { background: white; }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .big-stat {
+      background: var(--navy);
+      min-height: 320px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .big-stat:after {
+      content: '';
+      width: 220px;
+      height: 220px;
+      border: 1px solid #ffffff18;
+      border-radius: 50%;
+      position: absolute;
+      right: -60px;
+      top: -80px;
+    }
+
+    .big-stat strong {
+      font-size: 140px;
+      line-height: 1;
+      font-family: Manrope, sans-serif;
+      letter-spacing: -.09em;
+    }
+
+    .big-stat span {
+      font-weight: 800;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #b8cbe0;
+    }
+
+    .intro-text h2 {
+      font-size: clamp(29px, 3.5vw, 43px);
+      letter-spacing: -.05em;
+      line-height: 1.23;
+      margin: 18px 0;
+    }
+
+    .intro-text p { color: var(--muted); }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 28px;
+    }
+
+    .value {
+      border-left: 3px solid var(--red);
+      padding-left: 12px;
+    }
+
+    .value strong {
+      display: block;
+      font-family: Manrope, sans-serif;
+      font-size: 13px;
+    }
+
+    .value small { font-size: 12px; color: var(--muted); }
+
+    .team-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .member {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      transition: .25s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 45px #091a3412;
+    }
+
+    .member:before {
+      content: '';
+      height: 4px;
+      position: absolute;
+      inset: 0 0 auto;
+      background: linear-gradient(
+        90deg,
+        var(--red) 0 32%,
+        var(--navy) 32% 100%
+      );
+    }
+
+    /* Fotos dos integrantes */
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--navy);
+      margin-bottom: 22px;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .member .index {
+      float: right;
+      color: #a3adbb;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+
+    .member h3 {
+      font-size: 21px;
+      letter-spacing: -.03em;
+      margin: 0 0 4px;
+    }
+
+    .role {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: #e35d56;
+      text-transform: uppercase;
+      min-height: 38px;
+    }
+
+    .member p {
+      font-size: 14px;
+      color: #68758a;
+      margin: 14px 0 20px;
+      min-height: 89px;
+    }
+
+    .tags { display: flex; gap: 7px; flex-wrap: wrap; }
+
+    .tag {
+      border-radius: 4px;
+      background: #f0f3f7;
+      color: #34465e;
+      font-size: 11px;
+      padding: 6px 9px;
+      font-weight: 700;
+    }
+
+    .skills { background: #0b1e3a; color: white; }
+    .skills .section-heading p { color: #a7bbd2; }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .skill {
+      border: 1px solid #365174;
+      background: #122a49;
+      border-radius: 10px;
+      padding: 27px 20px;
+      min-height: 250px;
+    }
+
+    .skill .number {
+      font-size: 12px;
+      color: #f57370;
+      letter-spacing: .2em;
+      font-weight: 800;
+    }
+
+    .skill .glyph {
+      font-size: 29px;
+      margin: 26px 0 13px;
+      line-height: 1;
+    }
+
+    .skill h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+      letter-spacing: -.03em;
+    }
+
+    .skill p { font-size: 13px; color: #b0c0d3; margin: 0; }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 23px;
+    }
+
+    .impact-card {
+      padding: 36px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .impact-card.dark { background: #eef2f7; }
+
+    .impact-card .mini {
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .impact-card h3 {
+      font-size: 25px;
+      letter-spacing: -.05em;
+      margin: 13px 0;
+    }
+
+    .impact-card p { color: var(--muted); font-size: 15px; }
+
+    .impact-card ul {
+      margin: 17px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .impact-card li {
+      padding: 9px 0;
+      border-top: 1px solid #dae1ea;
+      font-size: 14px;
+    }
+
+    .impact-card li:before {
+      content: '↗';
+      color: var(--red);
+      font-weight: 800;
+      margin-right: 12px;
+    }
+
+    .cta { background: var(--red); color: white; padding: 78px 0; }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 26px;
+    }
+
+    .cta h2 {
+      font-size: clamp(27px, 3.4vw, 44px);
+      letter-spacing: -.055em;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .cta p { margin: 0; color: #fff9; max-width: 650px; }
+
+    .cta .btn {
+      background: white;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    .footer { background: #07172d; color: #95aac4; padding: 31px 0; }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      font-size: 12px;
+    }
+
+    .footer strong { color: white; letter-spacing: .08em; }
+
+    @media (max-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        min-height: 0;
+        padding-top: 85px;
+      }
+      .hero-copy { max-width: 700px; }
+      .orbit { max-width: 390px; }
+      .intro-grid { gap: 35px; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .skill-grid { grid-template-columns: repeat(2, 1fr); }
+      .links { gap: 14px; }
+    }
+
+    @media (max-width: 650px) {
+      .container { padding: 0 20px; }
+      .nav { height: 68px; }
+      .menu-toggle { display: block; }
+
+      .links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 68px;
+        background: #0a1b35;
+        padding: 22px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        border-top: 1px solid #ffffff22;
+      }
+
+      .links.open { display: flex; }
+      .hero h1 { font-size: 58px; }
+
+      .hero-content {
+        padding-top: 55px;
+        padding-bottom: 65px;
+        gap: 10px;
+      }
+
+      .hero p { font-size: 16px; }
+      .orbit { max-width: 320px; }
+      .section { padding: 72px 0; }
+      .intro-grid, .impact-grid { grid-template-columns: 1fr; }
+      .big-stat { min-height: 225px; }
+      .big-stat strong { font-size: 100px; }
+      .values { gap: 10px; }
+      .team-grid, .skill-grid { grid-template-columns: 1fr; }
+      .member p { min-height: 0; }
+      .skill { min-height: 0; }
+      .team-head { display: block; }
+
+      .cta-inner, .footer-inner {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .cta { padding: 65px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
 </head>
+
 <body>
-<header class="nav-wrap"><nav class="container nav" aria-label="Menu principal"><a class="brand" href="#inicio"><span class="brandmark" aria-hidden="true"></span>CONECTA<span style="color:var(--red)">.</span></a><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navlinks">☰</button><div class="links" id="navlinks"><a href="#sobre">Quem somos</a><a href="#equipe">Nossa equipe</a><a href="#competencias">Competências</a><a href="#proposta">Nossa proposta</a><a href="#contato" class="nav-cta">Vamos conectar ↗</a></div></nav></header>
-<main><section class="hero" id="inicio"><div class="container hero-content"><div class="hero-copy"><div class="eyebrow">Portfólio de equipe · MBA FGV</div><h1>Somos<br><span>CONECTA.</span></h1><p>Experiências diversas. Competências complementares. Uma só direção: transformar desafios em resultados com significado.</p><div class="actions"><a class="btn btn-red" href="#equipe">Conheça nossa equipe <span>↗</span></a><a class="btn btn-outline" href="#sobre">Nossa essência <span>↓</span></a></div></div><div class="orbit" role="img" aria-label="Cinco círculos interligados representando os cinco integrantes da equipe CONECTA"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#dfeaf8"/><stop offset="1" stop-color="#7399ca"/></linearGradient></defs><circle cx="250" cy="243" r="177" fill="none" stroke="#ffffff1e" stroke-width="1" stroke-dasharray="5 9"/><circle cx="250" cy="243" r="129" fill="none" stroke="#ffffff18"/><g stroke="#6e8fb9" stroke-width="3" opacity=".7"><path d="M250 86L398 196 338 373 157 373 102 196Z" fill="none"/><path d="M250 86L250 242M398 196L250 242M338 373L250 242M157 373L250 242M102 196L250 242"/></g><g><circle cx="250" cy="86" r="39" fill="#ed514e"/><circle cx="398" cy="196" r="39" fill="#f5f8fc"/><circle cx="338" cy="373" r="39" fill="#ed514e"/><circle cx="157" cy="373" r="39" fill="#f5f8fc"/><circle cx="102" cy="196" r="39" fill="#ed514e"/><circle cx="250" cy="242" r="64" fill="#112e54" stroke="#89a6ca" stroke-width="2"/><circle cx="250" cy="242" r="52" fill="none" stroke="#ffffff26" stroke-width="1"/></g><text x="250" y="248" font-family="Manrope,Arial" font-weight="800" font-size="36" letter-spacing="-2" fill="#fff" text-anchor="middle">C</text><g fill="#fff" font-size="14" font-family="Manrope" font-weight="800" text-anchor="middle"><text x="250" y="91">01</text><text x="398" y="201" fill="#183457">02</text><text x="338" y="378">03</text><text x="157" y="378" fill="#183457">04</text><text x="102" y="201">05</text></g></svg><div class="orbit-caption">CINCO PERSPECTIVAS · UMA CONEXÃO</div></div></div></section>
-<section class="section intro" id="sobre"><div class="container intro-grid"><div class="big-stat"><strong>05<span style="font-size:.35em;color:var(--red)">.</span></strong><span>Talentos que se conectam</span></div><div class="intro-text"><div class="eyebrow">Nossa essência</div><h2>O diferencial não está em sermos iguais. Está em <span style="color:var(--red)">somarmos diferenças.</span></h2><p>A CONECTA reúne cinco profissionais com trajetórias em saúde, engenharia, gestão, indústria, finanças e empreendedorismo. Nossas experiências se cruzam para ampliar perspectivas, fortalecer decisões e construir soluções consistentes.</p><p>Mais que reunir talentos, buscamos integrar conhecimentos técnicos e competências humanas para gerar valor coletivo.</p><div class="values"><div class="value"><strong>Pluralidade</strong><small>Diferentes olhares</small></div><div class="value"><strong>Colaboração</strong><small>Força do coletivo</small></div><div class="value"><strong>Resultados</strong><small>Impacto concreto</small></div></div></div></div></section>
-<section class="section" id="equipe"><div class="container"><div class="team-head"><div class="section-heading"><div class="eyebrow">As pessoas por trás da conexão</div><h2>Uma equipe.<br>Cinco trajetórias.</h2><p>Perfis que se complementam na análise de cenários, no planejamento, na execução e na gestão de projetos.</p></div></div><div class="team-grid">
-<article class="member"><span class="index">01 / 05</span><div class="avatar">JU</div><h3>Juliana</h3><div class="role">Saúde digital & gestão de capacitações</div><p>Experiência em saúde de alta complexidade e atuação em projetos de saúde digital, análise de indicadores, capacitações e melhoria contínua.</p><div class="tags"><span class="tag">Gestão por indicadores</span><span class="tag">Saúde digital</span><span class="tag">Articulação</span></div></article>
-<article class="member"><span class="index">02 / 05</span><div class="avatar">LY</div><h3>Lyz</h3><div class="role">Processos & gestão administrativa</div><p>Atuação em engenharia administrativa, organização de fluxos, fornecedores, prazos, custos e processos orientados à eficiência.</p><div class="tags"><span class="tag">Processos</span><span class="tag">Planejamento</span><span class="tag">Melhoria contínua</span></div></article>
-<article class="member"><span class="index">03 / 05</span><div class="avatar">JÚ</div><h3>Júlia</h3><div class="role">Indústria & integração de processos</div><p>Mais de dez anos em indústria multinacional, com experiência na estruturação de fluxos e articulação entre áreas dos setores público e privado.</p><div class="tags"><span class="tag">Gestão de fluxos</span><span class="tag">Integração</span><span class="tag">Adaptabilidade</span></div></article>
-<article class="member"><span class="index">04 / 05</span><div class="avatar">LU</div><h3>Luisa</h3><div class="role">Engenharia civil & projetos</div><p>Mais de dez anos em planejamento, implantação e execução de obras, com gestão de equipes multidisciplinares, custos e viabilidade.</p><div class="tags"><span class="tag">Projetos</span><span class="tag">Viabilidade</span><span class="tag">Execução</span></div></article>
-<article class="member"><span class="index">05 / 05</span><div class="avatar">NI</div><h3>Nilson</h3><div class="role">Estratégia & gestão financeira</div><p>Trajetória em finanças, empreendedorismo, consultoria estratégica e seguros, com foco em negociação e gestão de riscos.</p><div class="tags"><span class="tag">Finanças</span><span class="tag">Estratégia</span><span class="tag">Negociação</span></div></article>
-</div></div></section>
-<section class="section skills" id="competencias"><div class="container"><div class="section-heading"><div class="eyebrow">Nosso jeito de trabalhar</div><h2>Competências que fazem<br>a conexão acontecer.</h2><p>Quatro habilidades comportamentais dão sustentação à nossa atuação coletiva.</p></div><div class="skill-grid"><article class="skill"><div class="number">01 / CONECTAR</div><div class="glyph" aria-hidden="true">◎</div><h3>Comunicação & relacionamento</h3><p>Construir pontes entre pessoas, interesses e áreas de conhecimento.</p></article><article class="skill"><div class="number">02 / EVOLUIR</div><div class="glyph" aria-hidden="true">↗</div><h3>Resiliência</h3><p>Responder a mudanças com flexibilidade, aprendizado e persistência.</p></article><article class="skill"><div class="number">03 / REALIZAR</div><div class="glyph" aria-hidden="true">▦</div><h3>Planejamento & organização</h3><p>Transformar objetivos em ações coordenadas, com foco em prioridades.</p></article><article class="skill"><div class="number">04 / MOBILIZAR</div><div class="glyph" aria-hidden="true">✳</div><h3>Storytelling</h3><p>Traduzir dados, experiências e propostas em narrativas que geram conexão.</p></article></div></div></section>
-<section class="section" id="proposta"><div class="container"><div class="section-heading"><div class="eyebrow">Nossa proposta de valor</div><h2>Conexões que vão além do discurso.</h2><p>Uma visão integrada para enfrentar desafios reais de negócios e de projetos.</p></div><div class="impact-grid"><article class="impact-card"><div class="mini">01 / Complementaridade</div><h3>Do diagnóstico à entrega</h3><p>Unimos visões técnicas e gerenciais para compreender problemas, estruturar iniciativas, mobilizar recursos e acompanhar resultados.</p><ul><li>Processos e eficiência operacional</li><li>Gestão de projetos, custos e riscos</li><li>Dados, indicadores e decisões</li><li>Relações humanas e colaboração</li></ul></article><article class="impact-card dark"><div class="mini">02 / Argo Menthor</div><h3>Uma equipe para diferentes realidades</h3><p>Entendemos a adaptação a contextos diversos como uma competência indispensável para projetos de alcance nacional e internacional.</p><ul><li>Escuta ativa e respeito às diferenças</li><li>Integração de perspectivas profissionais</li><li>Responsabilidade e geração de valor</li><li>Aprendizagem e inovação contínuas</li></ul></article></div></div></section>
-<section class="cta" id="contato"><div class="container cta-inner"><div><div class="eyebrow" style="color:white">Nossa assinatura</div><h2>Diferentes caminhos.<br>Um futuro construído juntos.</h2><p>CONECTA · Portfólio acadêmico da equipe | MBA em Gestão e Gerenciamento de Projetos — FGV.</p></div><a class="btn" href="#inicio">Voltar ao início ↑</a></div></section></main>
-<footer class="footer"><div class="container footer-inner"><span><strong>CONECTA.</strong> Uma conexão de competências.</span><span>Projeto acadêmico · 2026 · Site demonstrativo, sem vínculo institucional com a Argo Menthor ou FGV.</span></div></footer>
-<script>const b=document.querySelector('.menu-toggle'),l=document.querySelector('.links');b.addEventListener('click',()=>{let on=l.classList.toggle('open');b.setAttribute('aria-expanded',String(on));b.textContent=on?'✕':'☰'});l.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{l.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰'}));</script>
-</body></html>
+  <header class="nav-wrap">
+    <nav class="container nav" aria-label="Menu principal">
+      <a class="brand" href="#inicio">
+        <span class="brandmark" aria-hidden="true"></span>
+        CONECTA<span style="color:var(--red)">.</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu"
+        aria-expanded="false" aria-controls="navlinks">☰</button>
+
+      <div class="links" id="navlinks">
+        <a href="#sobre">Quem somos</a>
+        <a href="#equipe">Nossa equipe</a>
+        <a href="#competencias">Competências</a>
+        <a href="#proposta">Nossa proposta</a>
+        <a href="#contato" class="nav-cta">Vamos conectar ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow">Portfólio de equipe · MBA FGV</div>
+          <h1>Somos<br><span>CONECTA.</span></h1>
+          <p>Experiências diversas. Competências complementares. Uma só direção: transformar desafios em resultados com significado.</p>
+          <div class="actions">
+            <a class="btn btn-red" href="#equipe">Conheça nossa equipe <span>↗</span></a>
+            <a class="btn btn-outline" href="#sobre">Nossa essência <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="orbit" role="img" aria-label="Cinco círculos interligados representando os cinco integrantes da equipe CONECTA">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop stop-color="#dfeaf8"/>
+                <stop offset="1" stop-color="#7399ca"/>
+              </linearGradient>
+            </defs>
+            <circle cx="250" cy="243" r="177" fill="none" stroke="#ffffff1e" stroke-width="1" stroke-dasharray="5 9"/>
+            <circle cx="250" cy="243" r="129" fill="none" stroke="#ffffff18"/>
+            <g stroke="#6e8fb9" stroke-width="3" opacity=".7">
+              <path d="M250 86L398 196 338 373 157 373 102 196Z" fill="none"/>
+              <path d="M250 86L250 242M398 196L250 242M338 373L250 242M157 373L250 242M102 196L250 242"/>
+            </g>
+            <g>
+              <circle cx="250" cy="86" r="39" fill="#ed514e"/>
+              <circle cx="398" cy="196" r="39" fill="#f5f8fc"/>
+              <circle cx="338" cy="373" r="39" fill="#ed514e"/>
+              <circle cx="157" cy="373" r="39" fill="#f5f8fc"/>
+              <circle cx="102" cy="196" r="39" fill="#ed514e"/>
+              <circle cx="250" cy="242" r="64" fill="#112e54" stroke="#89a6ca" stroke-width="2"/>
+              <circle cx="250" cy="242" r="52" fill="none" stroke="#ffffff26" stroke-width="1"/>
+            </g>
+            <text x="250" y="248" font-family="Manrope,Arial" font-weight="800" font-size="36" letter-spacing="-2" fill="#fff" text-anchor="middle">C</text>
+            <g fill="#fff" font-size="14" font-family="Manrope" font-weight="800" text-anchor="middle">
+              <text x="250" y="91">01</text>
+              <text x="398" y="201" fill="#183457">02</text>
+              <text x="338" y="378">03</text>
+              <text x="157" y="378" fill="#183457">04</text>
+              <text x="102" y="201">05</text>
+            </g>
+          </svg>
+          <div class="orbit-caption">CINCO PERSPECTIVAS · UMA CONEXÃO</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="sobre">
+      <div class="container intro-grid">
+        <div class="big-stat">
+          <strong>05<span style="font-size:.35em;color:var(--red)">.</span></strong>
+          <span>Talentos que se conectam</span>
+        </div>
+        <div class="intro-text">
+          <div class="eyebrow">Nossa essência</div>
+          <h2>O diferencial não está em sermos iguais. Está em <span style="color:var(--red)">somarmos diferenças.</span></h2>
+          <p>A CONECTA reúne cinco profissionais com trajetórias em saúde, engenharia, gestão, indústria, finanças e empreendedorismo. Nossas experiências se cruzam para ampliar perspectivas, fortalecer decisões e construir soluções consistentes.</p>
+          <p>Mais que reunir talentos, buscamos integrar conhecimentos técnicos e competências humanas para gerar valor coletivo.</p>
+          <div class="values">
+            <div class="value"><strong>Pluralidade</strong><small>Diferentes olhares</small></div>
+            <div class="value"><strong>Colaboração</strong><small>Força do coletivo</small></div>
+            <div class="value"><strong>Resultados</strong><small>Impacto concreto</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipe">
+      <div class="container">
+        <div class="team-head">
+          <div class="section-heading">
+            <div class="eyebrow">As pessoas por trás da conexão</div>
+            <h2>Uma equipe.<br>Cinco trajetórias.</h2>
+            <p>Perfis que se complementam na análise de cenários, no planejamento, na execução e na gestão de projetos.</p>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="member">
+            <span class="index">01 / 05</span>
+            <div class="avatar">
+              <img src="juliana.png" alt="Foto de Juliana" loading="lazy" width="100" height="100">
+            </div>
+            <h3>Juliana</h3>
+            <div class="role">Saúde digital & gestão de capacitações</div>
+            <p>Experiência em saúde de alta complexidade e atuação em projetos de saúde digital, análise de indicadores, capacitações e melhoria contínua.</p>
+            <div class="tags">
+              <span class="tag">Gestão por indicadores</span>
+              <span class="tag">Saúde digital</span>
+              <span class="tag">Articulação</span>
+            </div>
+          </article>
+
+          <article class="member">
+            <span class="index">02 / 05</span>
+            <div class="avatar">
+              <img src="lyz.png" alt="Foto de Lyz" loading="lazy" width="100" height="100">
+            </div>
+            <h3>Lyz</h3>
+            <div class="role">Processos & gestão administrativa</div>
+            <p>Atuação em engenharia administrativa, organização de fluxos, fornecedores, prazos, custos e processos orientados à eficiência.</p>
+            <div class="tags">
+              <span class="tag">Processos</span>
+              <span class="tag">Planejamento</span>
+              <span class="tag">Melhoria contínua</span>
+            </div>
+          </article>
+
+          <article class="member">
+            <span class="index">03 / 05</span>
+            <div class="avatar">
+              <img src="julia.png" alt="Foto de Júlia" loading="lazy" width="100" height="100">
+            </div>
+            <h3>Júlia</h3>
+            <div class="role">Indústria & integração de processos</div>
+            <p>Mais de dez anos em indústria multinacional, com experiência na estruturação de fluxos e articulação entre áreas dos setores público e privado.</p>
+            <div class="tags">
+              <span class="tag">Gestão de fluxos</span>
+              <span class="tag">Integração</span>
+              <span class="tag">Adaptabilidade</span>
+            </div>
+          </article>
+
+          <article class="member">
+            <span class="index">04 / 05</span>
+            <div class="avatar">
+              <img src="luisa.png" alt="Foto de Luisa" loading="lazy" width="100" height="100">
+            </div>
+            <h3>Luisa</h3>
+            <div class="role">Engenharia civil & projetos</div>
+            <p>Mais de dez anos em planejamento, implantação e execução de obras, com gestão de equipes multidisciplinares, custos e viabilidade.</p>
+            <div class="tags">
+              <span class="tag">Projetos</span>
+              <span class="tag">Viabilidade</span>
+              <span class="tag">Execução</span>
+            </div>
+          </article>
+
+          <article class="member">
+            <span class="index">05 / 05</span>
+            <div class="avatar">
+              <img src="nilson.png" alt="Foto de Nilson" loading="lazy" width="100" height="100">
+            </div>
+            <h3>Nilson</h3>
+            <div class="role">Estratégia & gestão financeira</div>
+            <p>Trajetória em finanças, empreendedorismo, consultoria estratégica e seguros, com foco em negociação e gestão de riscos.</p>
+            <div class="tags">
+              <span class="tag">Finanças</span>
+              <span class="tag">Estratégia</span>
+              <span class="tag">Negociação</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="competencias">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Nosso jeito de trabalhar</div>
+          <h2>Competências que fazem<br>a conexão acontecer.</h2>
+          <p>Quatro habilidades comportamentais dão sustentação à nossa atuação coletiva.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill">
+            <div class="number">01 / CONECTAR</div>
+            <div class="glyph" aria-hidden="true">◎</div>
+            <h3>Comunicação & relacionamento</h3>
+            <p>Construir pontes entre pessoas, interesses e áreas de conhecimento.</p>
+          </article>
+          <article class="skill">
+            <div class="number">02 / EVOLUIR</div>
+            <div class="glyph" aria-hidden="true">↗</div>
+            <h3>Resiliência</h3>
+            <p>Responder a mudanças com flexibilidade, aprendizado e persistência.</p>
+          </article>
+          <article class="skill">
+            <div class="number">03 / REALIZAR</div>
+            <div class="glyph" aria-hidden="true">▦</div>
+            <h3>Planejamento & organização</h3>
+            <p>Transformar objetivos em ações coordenadas, com foco em prioridades.</p>
+          </article>
+          <article class="skill">
+            <div class="number">04 / MOBILIZAR</div>
+            <div class="glyph" aria-hidden="true">✳</div>
+            <h3>Storytelling</h3>
+            <p>Traduzir dados, experiências e propostas em narrativas que geram conexão.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proposta">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Nossa proposta de valor</div>
+          <h2>Conexões que vão além do discurso.</h2>
+          <p>Uma visão integrada para enfrentar desafios reais de negócios e de projetos.</p>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <div class="mini">01 / Complementaridade</div>
+            <h3>Do diagnóstico à entrega</h3>
+            <p>Unimos visões técnicas e gerenciais para compreender problemas, estruturar iniciativas, mobilizar recursos e acompanhar resultados.</p>
+            <ul>
+              <li>Processos e eficiência operacional</li>
+              <li>Gestão de projetos, custos e riscos</li>
+              <li>Dados, indicadores e decisões</li>
+              <li>Relações humanas e colaboração</li>
+            </ul>
+          </article>
+          <article class="impact-card dark">
+            <div class="mini">02 / Argo Menthor</div>
+            <h3>Uma equipe para diferentes realidades</h3>
+            <p>Entendemos a adaptação a contextos diversos como uma competência indispensável para projetos de alcance nacional e internacional.</p>
+            <ul>
+              <li>Escuta ativa e respeito às diferenças</li>
+              <li>Integração de perspectivas profissionais</li>
+              <li>Responsabilidade e geração de valor</li>
+              <li>Aprendizagem e inovação contínuas</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="container cta-inner">
+        <div>
+          <div class="eyebrow" style="color:white">Nossa assinatura</div>
+          <h2>Diferentes caminhos.<br>Um futuro construído juntos.</h2>
+          <p>CONECTA · Portfólio acadêmico da equipe | MBA em Gestão e Gerenciamento de Projetos — FGV.</p>
+        </div>
+        <a class="btn" href="#inicio">Voltar ao início ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span><strong>CONECTA.</strong> Uma conexão de competências.</span>
+      <span>Projeto acadêmico · 2026 · Site demonstrativo, sem vínculo institucional com a Argo Menthor ou FGV.</span>
+    </div>
+  </footer>
+
+  <script>
+    const b = document.querySelector('.menu-toggle');
+    const l = document.querySelector('.links');
+
+    b.addEventListener('click', () => {
+      const on = l.classList.toggle('open');
+      b.setAttribute('aria-expanded', String(on));
+      b.setAttribute('aria-label', on ? 'Fechar menu' : 'Abrir menu');
+      b.textContent = on ? '✕' : '☰';
+    });
+
+    l.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        l.classList.remove('open');
+        b.setAttribute('aria-expanded', 'false');
+        b.setAttribute('aria-label', 'Abrir menu');
+        b.textContent = '☰';
+      });
+    });
+  </script>
+</body>
+</html>
